@@ -1,47 +1,107 @@
-{
-  "falas": [
-    {
-      "speechText": "Conforme as situacoes apresentadas, qual melhor conduta a tomar?",
-      "profileSprite": "1",
-      "ActorName": "Medico",
-      "questions": {
-        "question_id": "1",
-        "response1": "Hidroxicloroquina + Azitromicina por 10 dias",
-        "response2": "IOT e Cortiocoterapia",
-        "response3": "Tratamento sintomático, notificacao e encaminhamento ao CR",
-        "points": "3000",
-        "correctResponse": "ResponseC",
-        "inCorrectResponse": "Essa não é a melhor conduta a ser tratada com o paciente..."
-      }
-    },
-    {
-      "speechText": "TESTESTETE",
-      "profileSprite": "1",
-      "ActorName": "Medico",
-      "questions": {
-        "question_id": "2",
-        "response1": "ASDFASDF!",
-        "response2": "Vt",
-        "response3": "Cl",
-        "points": "2000",
-        "correctResponse": "ResponseB",
-        "inCorrectResponse": "Essa não é a melhor conduta a ser tratada com o paciente..."
-      }
-    },
-    {
-      "speechText": "adfasdfas?",
-      "profileSprite": "1",
-      "ActorName": "Medico",
-      "questions": {
-        "question_id": "3",
-        "response1": "A",
-        "response2": "B",
-        "response3": "C",
-        "points": "1000",
-        "correctResponse": "ResponseC",
-        "inCorrectResponse": "Essa não é a melhor conduta a ser tratada com o paciente..."
-      }
-    }
-  ]
+"casoClinico":{
+	"nomePaciente": "Pai",
+	"posicaoCamera": {
+		"x": "10",
+		"y": "35"	
+	}
+	"descricao": "Tjkashdfkjlkasdfsdfsdg",
+	"anamnese": {
+		"colisor": "desk",
+		"dialogo":
+		{
+			"speechText": "Conforme as situacoes apresentadas, qual melhor conduta a tomar?",
+			"ActorName": "Medico",
+		},
+		{
+			"speechText": "Conforme as situacoes apresentadas, qual melhor conduta a tomar?",
+			"ActorName": "Pai",
+		},
+		{
+			"speechText": "Conforme as situacoes apresentadas, qual melhor conduta a tomar?",
+			"ActorName": "Medico",
+		},
+		{
+			"speechText": "Conforme as situacoes apresentadas, qual melhor conduta a tomar?",
+			"ActorName": "Pai",
+		},
+		{
+			"speechText": "Conforme as situacoes apresentadas, qual melhor conduta a tomar?",
+			"ActorName": "Medico",
+		}]},
+	"exameFisico": {
+		"colisor": "blueBed",
+		"dialogo":[
+		{
+			"speechText": "Conforme as situacoes apresentadas, qual melhor conduta a tomar?",
+			"ActorName": "Medico",
+		},
+		{
+			"speechText": "Conforme as situacoes apresentadas, qual melhor conduta a tomar?",
+			"ActorName": "Medico",
+		},
+		{
+			"speechText": "Conforme as situacoes apresentadas, qual melhor conduta a tomar?",
+			"ActorName": "Medico",
+		}]
+		},
+	
+	"diagnostico": [
+	{
+		"speechText": "Conforme as situacoes apresentadas, qual melhor conduta a tomar?",
+		"ActorName": "Medico",
+		"questions": [{
+			"questionId": "1",
+			"coliderObject" : "blueBed"
+			"response1": {
+				"text": "Hidroxicloroquina + Azitromicina por 10 dias",
+				"isCorrect": "false",
+				"nextQuestionId": "4",
+				"response": "Essa não é a melhor conduta a ser tratada com o paciente..."
+			}
+			"response2": {
+				"text": "IOT e Cortiocoterapia",
+				"isCorrect": "false",
+				"nextQuestionId": "4",
+				"response":  "Essa não é a melhor conduta a ser tratada com o paciente..."
+			},
+			"response3": {
+				"text": "Tratamento sintomático, notificacao e encaminhamento ao CR",
+				"isCorrect": "true",
+				"nextQuestionId": "2",
+				"response": "Resposta Correta"
+			},
+		},
+		]
+	}],
+
+}
+	"falas": [
+	{
+		"speechText": "Conforme as situacoes apresentadas, qual melhor conduta a tomar?",
+		"ActorName": "Medico",
+		"questions": [{
+			"questionId": "1",
+			"coliderObject" : "blueBed"
+			"response1": {
+				"text": "Hidroxicloroquina + Azitromicina por 10 dias",
+				"isCorrect": "false",
+				"nextQuestionId": "4",
+				"response": "Essa não é a melhor conduta a ser tratada com o paciente..."
+			}
+			"response2": {
+				"text": "IOT e Cortiocoterapia",
+				"isCorrect": "false",
+				"nextQuestionId": "4",
+				"response":  "Essa não é a melhor conduta a ser tratada com o paciente..."
+			},
+			"response3": {
+				"text": "Tratamento sintomático, notificacao e encaminhamento ao CR",
+				"isCorrect": "true",
+				"nextQuestionId": "2",
+				"response": "Resposta Correta"
+			},
+		},
+		]
+	}],
 }
   
